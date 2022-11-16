@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css">
+    <title>Mi Portafolio</title>
+    <script>
+      function valida (miportafolio)
+      {
+        if ((miportafolio.txtnombre.value.length == 0) || (miportafolio.txtemail.value.length ==0) || (miportafolio.txtcomentario.value.length == 0))
+        alert("Falta información");
+        return false;
+      }
+    </script>
+</head>
+<body>
+    <header id="mainheader">
+      <nav id="navbar">
+          <div class="countainer">
+            <h1 class="logo"><a href="#mainheader">Mi Portafolio</a></h1>
+            <ul>
+                <li><a href="#mainheader">Home</a></li>
+                <li><a href="#miportafolio">Mi portafolio</a></li>
+                <li><a href="#acercademi">Acerca de mi</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+     </nav>
+
+          <div id="showcase">
+            <div class="countainer">
+                <div class="showcase-row">
+                 <div class="showcase-row-title">
+                     <p>Diseñadora, Fotógrafa e ilustradora</p>
+                     <h1 class="display-1">¡HOLA! <br><span class="txt-orange"> Mi nombre es Marcela
+                         y este es mi portafolio.</span></h1>
+                     <p class="large">Soy diseñadora gráfica, tengo 19 años y soy de Nicaragua. 
+                        En esta página podras ver mi portafolio.
+                      </p>
+                     <a href="#miportafolio" class="btn btn-round btn-dark">Mi portafolio</a>
+                    </div>
+                      <div class="showcase-row-img">
+                         <img src="portada.jpg" alt="">
+                      </div>
+                </div>
+            </div>
+         </div>
+    </header>
+    <br>
+    
+    <section id="miportafolio">
+     <div class="countainer">
+            <h2>Mi portafolio</h2>
+            <p>
+                Este es mi portafolio, en ello te muestro algunos de los trabajos que he hecho, tanto de fotografias como de ilustraciones que he hecho.
+            </p>
+          <div class="porfolio-row">
+            <a href="#"><img src="dibujo.jpeg" alt=""></a>
+            <a href="#"><img src="dibujo1.jpeg" alt=""></a>
+            <a href="#"><img src="dibujo2.jpeg" alt=""></a>
+          </div>
+          <div class="porfolio-row">
+            <a href="#"><img src="img-flor.jpg" alt=""></a>
+            <a href="#"><img src="img-atardecer.jpg" alt=""></a>
+            <a href="#"><img src="img-mariposa.jpg" alt=""></a>
+          </div>
+          <div class="porfolio-row">
+            <a href="#"><img src="img-persona3.jpg" alt=""></a>
+            <a href="#"><img src="img-persona2.jpg" alt=""></a>
+            <a href="#"><img src="img-persona1.jpg" alt=""></a>
+          </div>
+          <div class="porfolio-row">
+            <a href="#"><img src="img-persona4.jpg" alt=""></a>
+            <a href="#"><img src="img-persona6.jpg" alt=""></a>
+            <a href="#"><img src="img-persona5.jpg" alt=""></a>
+          </div>
+      </div>
+    </section>
+   <section id="acercademi">
+       <div class="container"> 
+        <h2>Acerca de mi.</h2>
+        <p>
+            ¡Hola! MI nombre es Marcela Prado y actualmente
+            soy estudiante de tercer año de la licenciatura de Diseño gráfico
+            y multimedia en la universidad nacional autónoma de Nicaragua
+            (UNAN).
+        </p>
+        <p>
+            Empecé a hacer ilustraciones de todo tipo desde hace 5 años aproximadamente, 
+            sin embargo la mayoría de ilustraciones que hago son en blanco y negro y tinta. 
+            Además de eso empecé a tomar fotografías desde hace dos años y he probado varios 
+            estilos de fotografías en distintos planos con distintas ambientaciones.
+        </p>
+        <p>
+            Además de los estudios que llevo, tengo una certificación internacional sobre los
+            fundamentos  de producción de videos y storytelling. Si quieres saber más al 
+            respecto de esto puedes contactarme mediante mis redes sociales.
+        </p>
+       </div>
+
+    </section>
+
+    <section id="contact">
+       <h2>
+        Contactame
+       </h2>
+        <h3>
+            Puedes contactarme a través de mis redes sociales:
+        </h3>
+        <h3>
+            Mi correo: </h3><a href="marcela170203@gmail.com">marcela170203@gmail.com</a>
+        
+        <h3>
+            Mi instagram: </h3><a href="https://www.instagram.com/nmpg_03/">@nmpg_03</a> 
+        
+        <h3>
+         Mi Pinterest:   </h3> <a href=" https://pin.it/7vYyHGO">@marcela170203</a> 
+        
+       
+        <h3>
+            Mi número de teléfono: +505 57165483  
+        </h3>
+
+       <br>
+       </br>
+        
+        <div class="contact-row">
+           <div class="contact-row-img">
+             <img src="sobre.png" alt="">
+          </div>
+
+            <div class="contact-row-form">
+              <h4>Ponerse en contacto</h4>
+              <form action="mailto:ana@gamil.com" method="get" name="miportafolio" onsubmit="valida(this)"> 
+                <div class="form-group">
+                   Escribe tu nombre: <input type="text" name="txtnombre" id="">
+                   <br>
+                   <br />
+                   Escribe tu correo electrónico: <input type="text" name="txtemail" id="">
+                   <br>
+                   <br />
+                   Deja tu comentario:
+                   <br>
+                   <br />
+                   <textarea name="txtcomentario" id="" cols="30" rows="10"></textarea>
+                   <br>
+                   <br />
+                   <input type="submit" value="enviar" name="enviar">
+                    
+                </div>
+              
+             </form>
+        </div>
+
+
+    </section>
+    <footer id="mainfooter">
+        <div class="container">
+            <a href="https://www.instagram.com/nmpg_03/"
+            class="instagram.follow-buttom"
+            data-show-count="false"
+            > @nmpg_03 </a>
+            <h3>Todos los derechos reservados.</h3>
+            
+        </div>
+
+    </footer>
+</body>
+
+
+</html>
